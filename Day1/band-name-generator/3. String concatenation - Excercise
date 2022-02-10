@@ -1,0 +1,18 @@
+print("hello" + "vinod")
+
+O/P:
+hellovinod
+
+
+print("hello" + " vinod")
+
+O/P:
+hello vinod
+
+
+OR
+
+print("hello" + " " + "vinod")
+
+O/P:
+hello vinod
