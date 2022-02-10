@@ -1,0 +1,29 @@
+print("what is your name?")
+
+o/p:
+what is your name?
+
+it prints exactly what we mention
+
+
+input():
+========
+main.py
+
+input("what is your name?\n")
+
+O/P:
+what is your name?
+vinod
+
+main.py
+=======
+
+#input() will get user input an console
+#print() will print the word hello and the user input 
+print("hello" + input("what is your name?") + "!")
+
+=======
+O/P:
+what is your name?vinod
+hellovinod!
