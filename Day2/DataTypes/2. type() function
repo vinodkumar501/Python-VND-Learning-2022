@@ -1,0 +1,40 @@
+
+Note:
+->Adding string to Integer doesnot make sense 
+->If you want to add integer to string . first you need to convert integer to string or vice versa
+->you can check it using type()
+
+main.py
+-------
+
+num_char = len(input("Enter your name\n"))
+print("The entered number has" + num_char + "characters")
+
+O/P: (fails with)
+------------------
+Enter your name
+->vinod
+
+Traceback (most recent call last):
+  File "C:\Users\vinod\PycharmProjects\pythonProject\main.py", line 2, in <module>
+    print("The entered number has" + num_char + "characters")
+TypeError: can only concatenate str (not "int") to str
+
+
+================= ===================
+->main.py 
+
+num_char = len(input("Enter your name\n"))           #vinod
+#print(num_char)                                      #5
+#print(type(num_char))                                #integar              
+#convert integer to string using type conversion
+new_num_char = str(num_char)
+print("The entered number has " + new_num_char + " characters")
+
+->O/P:
+Enter your name
+->vinod kumar
+The entered number has 11 characters
+
+================== ================== ========
+
