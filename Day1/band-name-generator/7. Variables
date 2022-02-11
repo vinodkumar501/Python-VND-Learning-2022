@@ -1,1 +1,18 @@
+name = "jack"
+print(name)
 
+name = "vinod"
+print(name)
+
+#print(len(input("what is your name?")))    # instead of writing like everything on one line write code as simple like below
+name = input("what is your name?")
+length = len(name)
+print(length)
+
+
+
+O/P:
+jack
+vinod
+what is your name?vinod
+5
