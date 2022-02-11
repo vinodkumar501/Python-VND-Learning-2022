@@ -16,3 +16,18 @@ jack
 vinod
 what is your name?vinod
 5
+
+-->
+time_until_midnight = "5"
+print("there are " + time_until_midnight + "hours ")
+
+o/p:
+there are 5hours 
+
+
+
+
+
+
+
+
