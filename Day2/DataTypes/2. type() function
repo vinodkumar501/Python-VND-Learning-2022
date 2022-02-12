@@ -27,8 +27,8 @@ TypeError: can only concatenate str (not "int") to str
 num_char = len(input("Enter your name\n"))           #vinod
 #print(num_char)                                      #5
 #print(type(num_char))                                #integar              
-#convert integer to string using type conversion
-new_num_char = str(num_char)
+#convert integer to string using type conversion otherwise it will fail , because we are adding string with numbers so first we need to convert type 
+new_num_char = str(num_char)                         #converting number into string and then adding to string
 print("The entered number has " + new_num_char + " characters")
 
 ->O/P:
@@ -36,5 +36,78 @@ Enter your name
 ->vinod kumar
 The entered number has 11 characters
 
-================== ================== ========
+================== ================== Examples of different types and conversions ========
+
+a = 123
+print(type(a))            #<class 'int'>
+
+a = str(123)
+print(type(a))            #<class 'str'>         here 123 is an integer but here we are converting int to str 
+
+
+a = float(123)           #<class 'float'>
+print(type(a)) 
+
+print(70 + float("120.5"))         #190.5
+
+print(str(70) + str(1205))         #701205
+
+=========================================================================================
+
+Enter 2 digit number(like 36) and output should be addition of those 2 number 3 + 6 =9 
+
+main.py
+
+two_digit_number = input("Type a two digit number: ")
+print(type(two_digit_number))                                 #str  (because we mention 2 digit code in "" so it validate it as string only
+result = (int(two_digit_number[0]) + int(two_digit_number[1]))
+print(result)
+
+<----
+o/p:
+Type a two digit number: 56
+11
+
+
+(OR)
+
+two_digit_number = input("Type a two digit number: ")
+print(type(two_digit_number))                  #str
+first_digit = int(two_digit_number[0])         #str to int
+second_digit = int(two_digit_number[1])
+result = first_digit + second_digit
+print(type(result))
+print(result)
+
+
+O/P:
+Type a two digit number: 34
+<class 'str'>
+<class 'int'>
+7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
