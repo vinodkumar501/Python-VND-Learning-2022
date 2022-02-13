@@ -1,0 +1,54 @@
+https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html
+
+
+======================================================== BMI calculator =============================================================
+
+https://en.wikipedia.org/wiki/Body_mass_index
+
+BMI = weight(kg)
+      ---------
+      height2(metersquare)
+
+main.py
+
+weight = input("enter your weight in kg: ")
+height = input("enter your height in m: ")
+#print(type(height))                          #str so we need to convert to int
+bmi = int(weight) / float(height) ** 2        #o/p is float
+#print(BMI)
+#print(type(BMI))
+bmi_as_int = int(bmi)
+print("person's bmi is" :bmi_as_int)
+#print(type(bmi_as_int))
+
+
+
+o/p:
+
+enter your weight in kg: 56
+enter your height in m: 5
+2
+<class 'int'>
+
+
+======================================= 
+
+weight = input("enter your weight in kg: ")
+height = input("enter your height in m: ")
+#print(type(height))                          #str so we need to convert to int
+bmi = int(weight) / float(height) ** 2        #o/p is float if you want to add to print as part of string first you need to convert int to str then only we can add 
+#print(BMI)
+#print(type(BMI))
+bmi_as_int = str(bmi)
+print("person's bmi is " + bmi_as_int)
+#print(type(bmi_as_int))
+
+
+O/P:
+
+enter your weight in kg: 56
+enter your height in m: 5
+person's bmi is 2.24
+
+
+
