@@ -1,0 +1,77 @@
+#print(8 / 3)             #2.6666
+#print(int(8 / 3))        #2
+#In python we have round() to get nearby value
+print(round(8 / 3))      #3
+print(round(8 / 3,2))    #2.67
+print(round(2.6666666, 2)) #2.67
+
+----> // (floor division <-------
+
+print(8 // 3)             # floor division --> 2
+print(type(8 // 3))
+
+O/p:
+2
+<class 'int'>
+
+----> / (division <-------
+
+print(8 / 3)             # floor division --> 2
+print(type(8 / 3))
+
+o/p:
+2.6666666666666665
+<class 'float'>
+
+print(4 / 2)            #2.0
+
+==========================================================
+main.py
+
+score = 0
+score += 1          #score = score + 1 ( we can write like)
+print(score)        # 1
+
+==========================================================
+score = 0
+score += 1          #score = score + 1 ( we can write like)
+print("your score is" + score)
+
+Error:
+
+    print("your score is" + score)
+TypeError: can only concatenate str (not "int") to str
+==========================================================
+score = 0
+score += 1                                #score = score + 1 ( we can write like)
+print("your score is " + str(score))      # here print "" is string and score is int value so we need to convert int to str to add print data
+
+O/P:
+
+your score is 1
+==========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
